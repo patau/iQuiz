@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let kevin = UIImage(named: "kevin")
         let michael = UIImage(named: "scott")
         
-        guard let quiz1 = Quiz(image: kevin, title: "Mathematics", desc: "I just want to lie on the beach and eat hot dogs.") else {
+        guard let quiz1 = Quiz(image: kevin, title: "Mathematics", desc: "Many small time make big time.") else {
             fatalError("Unable to instantiate quiz1")
         }
         
