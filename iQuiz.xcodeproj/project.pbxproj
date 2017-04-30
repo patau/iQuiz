@@ -15,6 +15,7 @@
 		CF5999B41EB5C2EA0057B35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5999B21EB5C2EA0057B35B /* LaunchScreen.storyboard */; };
 		CF5999BF1EB5C2EA0057B35B /* iQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5999BE1EB5C2EA0057B35B /* iQuizTests.swift */; };
 		CF5999CA1EB5C2EA0057B35B /* iQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5999C91EB5C2EA0057B35B /* iQuizUITests.swift */; };
+		CF5999D81EB5C4390057B35B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5999D71EB5C4390057B35B /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CF5999C51EB5C2EA0057B35B /* iQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5999C91EB5C2EA0057B35B /* iQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iQuizUITests.swift; sourceTree = "<group>"; };
 		CF5999CB1EB5C2EA0057B35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5999D71EB5C4390057B35B /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				CF5999A61EB5C2E90057B35B /* AppDelegate.swift */,
 				CF5999A81EB5C2E90057B35B /* ViewController.swift */,
+				CF5999D71EB5C4390057B35B /* Quiz.swift */,
 				CF5999AA1EB5C2E90057B35B /* Main.storyboard */,
 				CF5999B01EB5C2EA0057B35B /* Assets.xcassets */,
 				CF5999B21EB5C2EA0057B35B /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				CF5999A91EB5C2E90057B35B /* ViewController.swift in Sources */,
 				CF5999AF1EB5C2EA0057B35B /* iQuiz.xcdatamodeld in Sources */,
+				CF5999D81EB5C4390057B35B /* Quiz.swift in Sources */,
 				CF5999A71EB5C2E90057B35B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
