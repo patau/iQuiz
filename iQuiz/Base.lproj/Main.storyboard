@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RfY-JD-PlL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HhS-9r-S2h">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="quizCell" id="1S7-pP-PIN" customClass="CustomTableViewCell" customModule="iQuiz" customModuleProvider="target">
@@ -76,23 +76,30 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="PLu-BJ-Lz6"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-AA-uVo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="doZ-nk-OVG"/>
+                                    <barButtonItem title="Item" id="rXG-UW-82d">
+                                        <connections>
+                                            <action selector="settingsClicked:" destination="BYZ-38-t0r" id="vCF-hk-hfJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="HhS-9r-S2h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BYZ-by-iKC"/>
-                            <constraint firstItem="HhS-9r-S2h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pq3-Lg-Qna"/>
-                            <constraint firstAttribute="trailing" secondItem="HhS-9r-S2h" secondAttribute="trailing" id="a9e-L2-EZV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HhS-9r-S2h" secondAttribute="bottom" id="ec2-Rh-4w5"/>
+                            <constraint firstItem="ghI-AA-uVo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DMp-xh-Ib7"/>
+                            <constraint firstItem="HhS-9r-S2h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PUZ-Hd-QSt"/>
+                            <constraint firstAttribute="trailing" secondItem="HhS-9r-S2h" secondAttribute="trailing" id="SQM-hn-P0l"/>
+                            <constraint firstAttribute="trailing" secondItem="ghI-AA-uVo" secondAttribute="trailing" id="Ssu-kc-zMi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HhS-9r-S2h" secondAttribute="bottom" id="gto-yS-xTc"/>
+                            <constraint firstItem="ghI-AA-uVo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iL9-KB-uin"/>
+                            <constraint firstItem="HhS-9r-S2h" firstAttribute="top" secondItem="ghI-AA-uVo" secondAttribute="bottom" id="n4l-fZ-zRN"/>
                         </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="doZ-nk-OVG"/>
-                        <barButtonItem title="Item" id="rXG-UW-82d">
-                            <connections>
-                                <action selector="settingsClicked:" destination="BYZ-38-t0r" id="vCF-hk-hfJ"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="riY-Eq-fB8"/>
                     <connections>
                         <outlet property="settingsButton" destination="rXG-UW-82d" id="7Mu-pW-6FI"/>
@@ -101,29 +108,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="FtM-pA-FUm">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="RfY-JD-PlL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ehT-vB-KGe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="2pa-83-TX2">
-                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iIp-C9-cxm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tjD-KV-aco" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
