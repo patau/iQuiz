@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-iQuiz.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iQuizTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iQuizUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RadioButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2F8DFB43327F911BB458C7B8CAA53BB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6211055249CE697CBCB08FEABC326B9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>874ECB09147B9484BF3F69CCE3FC712C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B113A4E1B9B1DBF762D6829834051774</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

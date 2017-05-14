@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import os.log
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     //MARK: Properties
     var quizzes = [Quiz]()
     @IBOutlet weak var settingsButton: UIBarButtonItem!
+   // var answers = [[Answer]]() //For storing questions
+    var answers = [Int : [Answer]]()
+    var questionNum = 0
+    var questions = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +63,63 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.present(alert, animated: true, completion: nil)
     }
     
+    var cellTitle: String = ""
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! CustomTableViewCell
+        cellTitle = cell.titleLabel.text!
+        print("Set to \(cellTitle)")
+        self.performSegue(withIdentifier: "ToQuestion", sender: self)
+            }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //if segue.identifier == "ToQuestion" {
+            let qPage = segue.destination as! QuizQuestionViewController
+            print("Cell title: \(cellTitle)")
+            switch cellTitle {
+            case "Mathematics":
+                //questions = ["math question 1", "math question 2"]
+                questions.append("math question1")
+                questions.append("math question2")
+                questions = ["math question1", "math question 2"]
+                let answer1 = Answer(text: "answer 1", c: true)
+                let answer2 = Answer(text: "answer 2", c: false)
+                let answer3 = Answer(text: "answer 3", c: false)
+                let answer4 = Answer(text: "answer 4", c: false)
+                
+                answers[0] = [answer1, answer2, answer3, answer4]
+                answers[1] = [answer1, answer2, answer3, answer4]
+            case "Marvel Super Heroes":
+                questions = ["marvel question 1"]
+                //questions.append("marvel question1")
+                let answer1 = Answer(text: "answer 1", c: true)
+                let answer2 = Answer(text: "answer 2", c: false)
+                let answer3 = Answer(text: "answer 3", c: false)
+                let answer4 = Answer(text: "answer 4", c: false)
+                
+                answers[0] = [answer1, answer2, answer3, answer4]
+            case "Science":
+                //questions = ["science question 1"]
+                questions = ["science question1"]
+                let answer1 = Answer(text: "answer 1", c: true)
+                let answer2 = Answer(text: "answer 2", c: false)
+                let answer3 = Answer(text: "answer 3", c: false)
+                let answer4 = Answer(text: "answer 4", c: false)
+                
+                answers[0] = [answer1, answer2, answer3, answer4]
+            default:
+                break
+            }
+
+            qPage.questionText = self.questions
+            qPage.answerText = answers
+       // }
+    }
+    
+    @IBAction func unwindToMainMenu(segue:UIStoryboardSegue) {
+    }
+    
     //MARK: Private functions
     private func loadSampleQuizzes() {
         let dwight = UIImage(named: "meeveryday")
@@ -78,6 +140,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         quizzes += [quiz1, quiz2, quiz3]
     }
-    
 }
 
