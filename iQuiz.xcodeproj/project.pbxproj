@@ -23,6 +23,7 @@
 		CF69C0BF1EC5C67E004ED6F9 /* QA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69C0BE1EC5C67E004ED6F9 /* QA.swift */; };
 		CF69C0C11EC67416004ED6F9 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69C0C01EC67416004ED6F9 /* AnswerViewController.swift */; };
 		CF69C0C31EC67F79004ED6F9 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69C0C21EC67F79004ED6F9 /* FinishedViewController.swift */; };
+		CF9F93811EC872BB0075FD28 /* ManageDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F93801EC872BB0075FD28 /* ManageDatabase.swift */; };
 		CFFD759B1EBEBAAC006DEC3C /* QuizQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD759A1EBEBAAC006DEC3C /* QuizQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		CF69C0BE1EC5C67E004ED6F9 /* QA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QA.swift; sourceTree = "<group>"; };
 		CF69C0C01EC67416004ED6F9 /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		CF69C0C21EC67F79004ED6F9 /* FinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
+		CF9F93801EC872BB0075FD28 /* ManageDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageDatabase.swift; sourceTree = "<group>"; };
 		CFFD759A1EBEBAAC006DEC3C /* QuizQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizQuestionViewController.swift; sourceTree = "<group>"; };
 		D0DB5949BCE993B617533489 /* Pods_iQuizUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iQuizUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 				CF69C0BE1EC5C67E004ED6F9 /* QA.swift */,
 				CF5999D71EB5C4390057B35B /* Quiz.swift */,
 				CF5999AA1EB5C2E90057B35B /* Main.storyboard */,
+				CF9F93801EC872BB0075FD28 /* ManageDatabase.swift */,
 				CF5999D91EB5C90F0057B35B /* CustomTableViewCell.swift */,
 				CF5999B01EB5C2EA0057B35B /* Assets.xcassets */,
 				CF5999B21EB5C2EA0057B35B /* LaunchScreen.storyboard */,
@@ -473,6 +476,7 @@
 				CF5999A91EB5C2E90057B35B /* ViewController.swift in Sources */,
 				CF69C0BF1EC5C67E004ED6F9 /* QA.swift in Sources */,
 				CF5999DA1EB5C90F0057B35B /* CustomTableViewCell.swift in Sources */,
+				CF9F93811EC872BB0075FD28 /* ManageDatabase.swift in Sources */,
 				CF69C0C31EC67F79004ED6F9 /* FinishedViewController.swift in Sources */,
 				CFFD759B1EBEBAAC006DEC3C /* QuizQuestionViewController.swift in Sources */,
 				CF69C0C11EC67416004ED6F9 /* AnswerViewController.swift in Sources */,

@@ -72,8 +72,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="CJQ-so-ZJQ"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PLu-BJ-Lz6"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ye9-Wr-5bc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="A3u-BF-kfB"/>
                                 </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-AA-uVo">
@@ -103,6 +103,7 @@
                     <navigationItem key="navigationItem" id="riY-Eq-fB8"/>
                     <connections>
                         <outlet property="settingsButton" destination="rXG-UW-82d" id="7Mu-pW-6FI"/>
+                        <outlet property="tableView" destination="HhS-9r-S2h" id="7tJ-RP-FeJ"/>
                         <segue destination="dSa-Pv-M5Y" kind="show" identifier="ToQuestion" id="s9A-9M-E56"/>
                     </connections>
                 </viewController>
@@ -354,6 +355,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="btg-h3-a8j"/>
+        <segue reference="s9A-9M-E56"/>
     </inferredMetricsTieBreakers>
 </document>

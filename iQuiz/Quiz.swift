@@ -24,4 +24,13 @@ class Quiz {
         self.title = title
         self.desc = desc
     }
+    
+    func insertIntoDB() {
+        let db = ManageDatabase.getDB()
+        do {
+            try db!.run("INSERT INTO Quiz (quizTitle, quizDesc) VALUES ('\(self.title)', '\(self.desc)')")
+        } catch {
+            print("Error inserting into db")
+        }
+    }
 }

@@ -29,7 +29,6 @@ class QuizQuestionViewController: UIViewController {
         super.viewDidLoad()
         nextButton.isHidden = true
 
-        print("In quiz question")
         print(questionText)
         print(answerText)
         

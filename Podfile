@@ -7,6 +7,7 @@ target 'iQuiz' do
 
   # Pods for iQuiz
   pod 'RadioButton', '~> 1.0'
+  pod 'SQLite.swift', '~> 0.11.3'
 
   target 'iQuizTests' do
     inherit! :search_paths

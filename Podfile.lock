@@ -1,12 +1,17 @@
 PODS:
   - RadioButton (1.0)
+  - SQLite.swift (0.11.3):
+    - SQLite.swift/standard (= 0.11.3)
+  - SQLite.swift/standard (0.11.3)
 
 DEPENDENCIES:
   - RadioButton (~> 1.0)
+  - SQLite.swift (~> 0.11.3)
 
 SPEC CHECKSUMS:
   RadioButton: 7ef053baf6ff0e7f9e777016c28e9ba4e330edba
+  SQLite.swift: 99b36c22084427f0abbeb957556ce1528cf10bb3
 
-PODFILE CHECKSUM: dd2ed859590eb657a0f8151bd1a53f47dd04270e
+PODFILE CHECKSUM: dafa69df298612868aad80de6d8c155ea7e5c07e
 
 COCOAPODS: 1.2.1
